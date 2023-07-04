@@ -118,6 +118,13 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Select all text in box on click
+ * Via https://www.wisdomgeek.com/development/web-development/select-all-text-on-click-using-css/
+ */
+.select-all-text {
+  user-select: all;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
