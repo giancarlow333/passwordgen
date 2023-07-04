@@ -17,7 +17,7 @@ generateBtn.addEventListener("click", writePassword);
 const upper_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lower_chars = "abcdefghijklmnopqrstuvwxyz";
 const number_chars = "0123456789";
-const special_chars = "";
+const special_chars = "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"; // I excluded spaces
 
 // generate the password
 function generatePassword() {
@@ -37,6 +37,12 @@ function generatePassword() {
     alert("You rejected all password criteria!\nUnable to generate password!");
     return;
   }
+
+  // random generation
+  // some functionality via https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
+  var chosen_characters = ""; // these are the character types chosen via the confirms above
+
+  
   
   return "swordfish";
 }
