@@ -13,6 +13,12 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Add constants for each character type
+const upper_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lower_chars = "abcdefghijklmnopqrstuvwxyz";
+const number_chars = "0123456789";
+const special_chars = "";
+
 // generate the password
 function generatePassword() {
   var length = prompt("Please enter the password length:");
