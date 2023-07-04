@@ -12,6 +12,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  // make whole password selectable on click
+  passwordText.setAttribute("style", "user-select: all;");
 
 }
 
